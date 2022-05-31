@@ -6,6 +6,7 @@ function Profile() {
         <S.Wrapper>
 
             <S.WrapperImage src="https://avatars.githubusercontent.com/u/21125748?v=4" alt="avatar User"/>
+
             <S.WrapperInfoUser>
                 <div>
                     <h1>Celso Aquino</h1>
