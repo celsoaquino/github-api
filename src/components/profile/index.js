@@ -12,11 +12,7 @@ function Profile() {
                     <h1>Celso Aquino</h1>
                     <S.WrapperUserName>
                         <h3>Username:</h3>
-                        <a href="https://github.com/celsoaquino"
-                           target="_blank"
-                           rel="noreferrer">
-                            <span>celsoaquino</span>
-                        </a>
+
 
                     </S.WrapperUserName>
                 </div>
