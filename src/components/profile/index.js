@@ -1,6 +1,9 @@
 import * as S from './styled'
+import useGithub from "../hooks/github-hooks";
 
 function Profile() {
+
+    const { githubState } = useGithub()
 
     return (
         <S.Wrapper>
@@ -9,7 +12,7 @@ function Profile() {
 
             <S.WrapperInfoUser>
                 <div>
-                    <h1>Celso Aquino</h1>
+                    <h1>{  }</h1>
                     <S.WrapperUserName>
                         <h3>Username:</h3>
 
