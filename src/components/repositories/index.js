@@ -29,29 +29,33 @@ function Repositories() {
                     <S.WrapperTab>Starred</S.WrapperTab>
                 </S.WrapperTabList>
                 <S.WrapperTabPanel>
+                    <S.WrapperList>
                     {githubState.repositories.map(
                         item => (
                             <RepositoryItem
                                 key={item.id}
                                 name={item.name}
                                 linkToRepo={item.html_url}
-                                fullName={item.fullName}
+                                fullName={item.full_name}
                             />
                         )
                     )}
-
+                    </S.WrapperList>
                 </S.WrapperTabPanel>
+
                 <S.WrapperTabPanel>
+                    <S.WrapperList>
                     {githubState.starred.map(
                         item => (
                             <RepositoryItem
                                 key={item.id}
                                 name={item.name}
                                 linkToRepo={item.html_url}
-                                fullName={item.fullName}
+                                fullName={item.full_Name}
                             />
                         )
                     )}
+                </S.WrapperList>
                 </S.WrapperTabPanel>
             </S.WrapperTabs>
             ) : <></>}
