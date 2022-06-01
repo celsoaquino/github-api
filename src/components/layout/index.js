@@ -2,11 +2,11 @@ import * as S from './styled'
 import Header from "../header";
 
 function Layout({ children }) {
+
     return(
         <S.WrapperLayout>
             <Header />
             {children}
-
         </S.WrapperLayout>
     )
 }
