@@ -3,10 +3,11 @@ import {ResetCSS} from "./global/resetCSS";
 import App from "./App";
 
 function Providers() {
+
     return (
         <main>
             <GithubProvider>
-                <ResetCSS/>
+                <ResetCSS />
                 <App />
             </GithubProvider>
         </main>
