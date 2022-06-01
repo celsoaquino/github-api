@@ -2,17 +2,23 @@ import Layout from "./components/layout";
 import Profile from "./components/profile";
 import {ResetCSS} from "./global/resetCSS";
 import Repositories from "./components/repositories";
-import GithubProvider from "./components/providers/github-provider";
+import GithubProvider from "./providers/github-provider";
+import useGithub from "./hooks/github-hooks";
 
 function App() {
+    const githubState = useGithub()
     return (
         <main>
-            <GithubProvider />
+            <GithubProvider>
             <ResetCSS />
             <Layout>
-                <Profile />
-                <Repositories />
+                {githubState.loading ? (<p>loading...</p>) :
+                    (<>
+                        <Profile />
+                        <Repositories />
+                    </>)}
             </Layout>
+            </GithubProvider>
         </main>
     );
 }
